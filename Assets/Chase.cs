@@ -5,18 +5,23 @@ using UnityEngine.AI;
 
 public class Chase : MonoBehaviour
 {
-    public GameObject target;
     private NavMeshAgent agent;
+    private GameObject unitychan;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+
+        this.unitychan = GameObject.Find("unitychan");
     }
 
     // Update is called once per frame
     void Update()
     {
-        agent.destination = target.transform.position;
+        if(agent.pathStatus != NavMeshPathStatus.PathInvalid)
+        {
+            agent.destination = unitychan.transform.position;
+        }
     }
 }
