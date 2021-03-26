@@ -7,6 +7,7 @@ public class DestroyObject : MonoBehaviour
     public int damage;
     private GameObject enemy;
     private HP hp;
+
     // Start is called before the first frame update
     void Start()
     {

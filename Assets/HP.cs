@@ -20,7 +20,8 @@ public class HP : MonoBehaviour
         if (hitpoint <= 0)
         {
             ScoreObject.GetComponent<TextControl>().AddScore();
-           Destroy(gameObject);
+            GameObject go = Instantiate(TinyExplosion, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 
@@ -28,11 +29,6 @@ public class HP : MonoBehaviour
     {
         hitpoint -= damage;
         Debug.Log("hit");
-    }
-
-    void OnDestroy()
-    {
-        GameObject go = Instantiate(TinyExplosion, transform.position, Quaternion.identity);
     }
     
 }
