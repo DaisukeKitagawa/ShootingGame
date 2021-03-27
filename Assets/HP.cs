@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HP : MonoBehaviour
 {
-    public int hitpoint = 300;
+    public int hitpoint = 200;
     private GameObject ScoreObject;
     public GameObject TinyExplosion;
 

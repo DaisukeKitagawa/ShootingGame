@@ -17,8 +17,8 @@ public class Return : MonoBehaviour
         
     }
 
-    public void OnOperateStart()
+    public void OnGameStart()
     {
-        
+        SceneManager.LoadScene("TitleScene");
     }
 }

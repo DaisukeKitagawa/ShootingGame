@@ -402,7 +402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -37}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1283926667
@@ -459,7 +459,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1283926669}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1283926667}
+        m_MethodName: OnGameStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1283926669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,7 +543,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.35949707, y: 129}
-  m_SizeDelta: {x: 500, y: 170}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384151731
 MonoBehaviour:
@@ -566,7 +577,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "HP\u304C1000\u304B\u3089\u30B9\u30BF\u30FC\u30C8HP\u304C0\u306B\u306A\u3063\u305F\u3089GAMEOVER\nHP\u304C0\u306B\u306A\u308B\u307E\u3067\u306BScore\u3092100\u96C6\u3081\u308C\u3070Clear\n\u6575\u306B1\u56DE\u653B\u6483\u3055\u308C\u308B\u5EA6\u306B100\u30C0\u30E1\u30FC\u30B8\u53D7\u3051\u308B\u3002\n\u6575\u30921\u56DE\u6483\u7834\u3059\u308B\u5EA6\u306B10\u306EScore\u304C\u8CB0\u3048\u308B\u3002\n\u6575\u306B3\u56DE\u653B\u6483\u3059\u308B\u3068\u6483\u7834\u3067\u304D\u308B\u3002\n>\u3067\u53F3\u56DE\u8EE2\u3001<\u3067\u5DE6\u56DE\u8EE2\u3059\u308B\u3002\n\u30B9\u30DA\u30FC\u30B9\u30AD\u30FC\u3067\u653B\u6483\u304C\u3067\u304D\u308B\u3002"
+  m_Text: "HP\u304C1000\u304B\u3089\u30B9\u30BF\u30FC\u30C8HP\u304C0\u306B\u306A\u3063\u305F\u3089GAMEOVER\nHP\u304C0\u306B\u306A\u308B\u307E\u3067\u306BScore\u3092100\u96C6\u3081\u308C\u3070Clear\n\u6575\u306B1\u56DE\u653B\u6483\u3055\u308C\u308B\u5EA6\u306B100\u30C0\u30E1\u30FC\u30B8\u53D7\u3051\u308B\u3002\n\u6575\u30921\u56DE\u6483\u7834\u3059\u308B\u5EA6\u306B10\u306EScore\u304C\u8CB0\u3048\u308B\u3002\n\u6575\u306B2\u56DE\u653B\u6483\u3059\u308B\u3068\u6483\u7834\u3067\u304D\u308B\u3002\nR\u3067\u30EA\u30ED\u30FC\u30C9\u3055\u308C1\u56DE\u306710\u30EA\u30ED\u30FC\u30C9\u3055\u308C\u308B\u3002\n>\u3067\u53F3\u56DE\u8EE2\u3001<\u3067\u5DE6\u56DE\u8EE2\u3059\u308B\u3002\n\u30B9\u30DA\u30FC\u30B9\u30AD\u30FC\u3067\u653B\u6483\u304C\u3067\u304D\u308B\u3002"
 --- !u!222 &1384151732
 CanvasRenderer:
   m_ObjectHideFlags: 0
