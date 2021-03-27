@@ -6,7 +6,7 @@ public class Shooting : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public float shotSpeed;
-    public int shotCount = 30;
+    public int shotCount = 10;
     private float shotInterval;
 
     // Start is called before the first frame update
@@ -36,7 +36,7 @@ public class Shooting : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.R))
         {
-            shotCount = 30;
+            shotCount = 10;
         }
     }
 }
