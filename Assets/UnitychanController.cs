@@ -12,7 +12,7 @@ public class UnitychanController : MonoBehaviour
     private GameObject hpText;
     private GameObject gameoverText;
     private float delta = 0;
-    private float span = 10.0f;
+    private float span = 3.0f;
     public EnemyGenerator enemyGenerator;
 
     private bool isStop = false;

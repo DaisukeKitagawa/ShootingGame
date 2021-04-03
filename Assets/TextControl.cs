@@ -9,7 +9,7 @@ public class TextControl : MonoBehaviour
     int Score = 0;
     public Text ScoreText;
     private GameObject clearText;
-    private float span = 10.0f;
+    private float span = 3.0f;
     private float delta = 0;
     public UnitychanController unitychanController;
     public EnemyGenerator enemyGenerator;

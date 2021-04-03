@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shooting : MonoBehaviour
 {
@@ -8,11 +9,12 @@ public class Shooting : MonoBehaviour
     public float shotSpeed;
     public int shotCount = 10;
     private float shotInterval;
+    private GameObject reloadText;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.reloadText = GameObject.Find("ReloadText");
     }
 
     // Update is called once per frame
@@ -37,6 +39,12 @@ public class Shooting : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.R))
         {
             shotCount = 10;
+            this.reloadText.GetComponent<Text>().text = "";
+        }
+
+        if (shotCount <= 0)
+        {
+            this.reloadText.GetComponent<Text>().text = "Press the R";
         }
     }
 }
