@@ -6,18 +6,23 @@ using UnityEngine.UI;
 public class Stick : MonoBehaviour
 {
     public GameObject unitychan;
-    [SerializeField] Joystick joystick = null;
+    private float speed = 7f;
+    [SerializeField] DynamicJoystick dynamicjoystick = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        float horizontal = joystick.Horizontal;
-        float vertical = joystick.Vertical;
+        float horizontal = dynamicjoystick.Horizontal;
+        float vertical = dynamicjoystick.Vertical;
+        Vector2 direction = dynamicjoystick.Direction;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(touch.phase ==TouchPhase.Moved)
+        {
+            unitychan.transform.Rotate(0, -speed, 0);
+        }
     }
 }
