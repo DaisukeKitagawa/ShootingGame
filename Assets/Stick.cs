@@ -20,9 +20,15 @@ public class Stick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(touch.phase ==TouchPhase.Moved)
+        float horizontal = dynamicjoystick.Horizontal;
+        if(horizontal < 0)
         {
             unitychan.transform.Rotate(0, -speed, 0);
+        }
+
+        if(horizontal > 0)
+        {
+            unitychan.transform.Rotate(0, speed, 0);
         }
     }
 }
